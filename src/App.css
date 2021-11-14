@@ -8,12 +8,18 @@
 
 body {
     background-color: var(--color-bg);
+    color: #fff;
     /* color: var(--color-text); */
 }
 
 a {
     color: unset;
     text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 .gradient__bg {

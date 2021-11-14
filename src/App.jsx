@@ -14,8 +14,8 @@ export const App = () => {
     return (
         <div className="App">
             <div className="gradient__bg">
-                <Header />
                 <Navigation />
+                <Header />
             </div>
             <Brand />
             <WhatGPT3 />
