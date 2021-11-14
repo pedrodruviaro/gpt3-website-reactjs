@@ -59,7 +59,7 @@ img {
 }
 
 .gradient__text {
-    background-color: var(--gradient-text);
+    background: var(--gradient-text);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
