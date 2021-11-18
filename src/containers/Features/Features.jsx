@@ -1,6 +1,6 @@
 import React from "react";
-import "./features.css";
 import { Feature } from "../../components/Feature/Feature";
+import { Container } from "./styles";
 
 const featureData = [
     {
@@ -23,19 +23,19 @@ const featureData = [
 
 export const Features = () => {
     return (
-        <div className="gpt3__features section__padding" id="features">
-            <div className="gpt3__features-heading">
+        <Container className=" section__padding" id="features">
+            <header>
                 <h1 className="gradient__text">
                     The Future is Now and You Just Need To Realize It. Step into
                     Future Today &#38; Make it Happen.
                 </h1>
                 <p>Request Early Access to Get Started</p>
-            </div>
-            <div className="gpt3__features-container">
+            </header>
+            <main>
                 {featureData.map((item) => (
                     <Feature key={item.title} {...item} />
                 ))}
-            </div>
-        </div>
+            </main>
+        </Container>
     );
 };

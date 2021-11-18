@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./navigation.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/logo.svg";
+import { Container } from "./styles";
 
 const Menu = () => {
     return (
@@ -29,7 +29,7 @@ export const Navigation = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
 
     return (
-        <div className="gpt3__navbar">
+        <Container className="gpt3__navbar">
             <div className="gpt3__navbar-links">
                 <div className="gpt3__navbar-links_logo">
                     <img src={logo} alt="Logo" />
@@ -70,6 +70,6 @@ export const Navigation = () => {
                     </div>
                 )}
             </div>
-        </div>
+        </Container>
     );
 };

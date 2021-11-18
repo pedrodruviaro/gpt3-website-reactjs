@@ -1,13 +1,18 @@
 import React from "react";
-import "./header.css";
 
 import people from "../../assets/people.png";
 import ai from "../../assets/ai.png";
+import {
+    Container,
+    ImageContainer,
+    InputContainer,
+    PeopleContainer,
+} from "./styles";
 
 export const Header = () => {
     return (
-        <div className="gpt3__header section__padding" id="home">
-            <div className="gpt3__header-content">
+        <Container className=" section__padding" id="home">
+            <main>
                 <h1 className="gradient__text">
                     Let's Build Something amazing with GPT-3 OpenAI
                 </h1>
@@ -19,22 +24,22 @@ export const Header = () => {
                     we years to order allow asked of.
                 </p>
 
-                <div className="gpt3__header-content__input">
+                <InputContainer>
                     <input type="email" placeholder="Your Email Adress" />
                     <button type="button">Get Started</button>
-                </div>
+                </InputContainer>
 
-                <div className="gpt3__header-content__people">
+                <PeopleContainer>
                     <img src={people} alt="People" />
                     <p>
                         1,600 people requested access a visit in last 24 hours
                     </p>
-                </div>
-            </div>
+                </PeopleContainer>
+            </main>
 
-            <div className="gpt3__header-image">
+            <ImageContainer>
                 <img src={ai} alt="Ai" />
-            </div>
-        </div>
+            </ImageContainer>
+        </Container>
     );
 };

@@ -1,3 +1,23 @@
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyles = createGlobalStyle`
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: ${(props) => props.theme.colorBg};
+    color: #fff;
+}
+
 .gradient__bg {
     background: -moz-radial-gradient(
         circle at 3% 25%,
@@ -35,7 +55,7 @@
 }
 
 .gradient__text {
-    background: var(--gradient-text);
+    background: ${(props) => props.theme.gradientText};
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -97,3 +117,5 @@
         margin: 4rem 2rem;
     }
 }
+
+`;

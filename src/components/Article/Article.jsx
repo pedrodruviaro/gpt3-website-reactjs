@@ -1,20 +1,22 @@
 import React from "react";
-import "./article.css";
+import { Container } from "./styles";
 
 export const Article = ({ image, date, title }) => {
     return (
-        <div className="gpt3__blog-container_article">
-            <div className="gpt3__blog-container_article-image">
+        <Container>
+            <header>
                 <img src={image} alt="blog post" />
-            </div>
+            </header>
 
-            <div className="gpt3__blog-container__article-content">
+            <main>
                 <div>
                     <p>{date}</p>
                     <h3>{title}</h3>
                 </div>
-                <p>Read Full Article</p>
-            </div>
-        </div>
+            </main>
+            <footer>
+                <a href="/">Read Full Article</a>
+            </footer>
+        </Container>
     );
 };
