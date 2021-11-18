@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.div`
+    max-width: 85rem;
+    margin: 0 auto;
+`;
+
 export const Container = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
 
-    max-width: 85rem;
-    margin: 4rem auto;
-
-    padding: 2rem;
     border-radius: 1rem;
+    padding: 2rem;
 
     background: ${(props) => props.theme.gradientBar};
     color: #212121;
